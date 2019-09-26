@@ -32,37 +32,41 @@ $amountD = $_GET["amountD"];
 </head>
 <body>
 
-<center>
+
 <main>
-<h1>finance tracker sketch</h1>
+<h1>finance tracker App</h1>
 	<form method="GET" >
-		<section>
-			<div>
+		
+		<div>
 			<h2>Item Name 1</h2>
 			<input type="text" name="name" placeholder="item name 1" required="">
-			<input type="number" name="amountA" placeholder="amount/day" required="">
 			<textarea type="text" placeholder="item description" required=""></textarea>
+			<input type="number" name="amountA" placeholder="amount/day" required="">
+			
 		</div>
 
 		<div>
 			<h2>Item Name 2</h2>
 			<input type="text" name="name" placeholder="item name 2" required="">
-			<input type="number" name="amountB" placeholder="amount/day" required="">
 			<textarea type="text" placeholder="item description" required=""></textarea>
+			<input type="number" name="amountB" placeholder="amount/day" required="">
+			
 		</div>
 
 		<div>
 			<h2>Item Name 3</h2>
 			<input type="text" name="name" placeholder="item name 3" required="">
-			<input type="number" name="amountC" placeholder="amount/day" required="">
 			<textarea type="text" placeholder="item description" required=""></textarea>
+			<input type="number" name="amountC" placeholder="amount/day" required="">
+			
 		</div>
 
 		<div>
 			<h2>Item Name </h2>
 			<input type="text" name="name" placeholder="item name 4" required="">
-			<input type="number" name="amountD" placeholder="amount/day" required="">
 			<textarea type="text" placeholder="item description" required=""></textarea>
+			<input type="number" name="amountD" placeholder="amount/day" required="">
+			
 		</div>
 
 		<div>
@@ -73,20 +77,26 @@ $amountD = $_GET["amountD"];
 		</div>
 
 		<div>
-			<?php
-				echo "Total Amount spent Daily is ". $message . "Naira <br>"; 
- 				echo "Total Amount spent Weekly is ". $weekly  . "Naira <br>";
-				echo "Total Amount spent Monthly is ". $monthly  . "Naira"; 
-			?>
+			<p>Total Amount spent Daily in  Naira</p>
+			<input type="" name="" value="<?php echo $message ?>">
+
+			<p>Total Amount spent Weekly in  Naira</p>
+			<input type="" name="" value="<?php echo $weekly ?>">
+
+			<p>Total Amount spent Monthly in  Naira</p>
+			<input type="" name="" value="<?php echo $monthly ?>">
+			
 		</div>
 
+
+
 		
 
 		
-		</section>
+		
 	</form>
 </main>
-</center>
+
 
 
 </body>
